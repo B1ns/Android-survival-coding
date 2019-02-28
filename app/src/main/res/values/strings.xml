@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android survival coding</string>
+    <string name="bmi">BMI</string>
+    <string name="height">키</string>
+    <string name="weight">몸무게</string>
+    <string name="result">결과</string>
+    <string name="resultText">결과가 표시되는곳</string>
+    <string name="stopWatch">스탑워치</string>
+    <string name="WebView">나만의 웹 브라우저</string>
+    <string name="BMI">비만도 계산기</string>
+</resources>
