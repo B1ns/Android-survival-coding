@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         bmi.setOnClickListener {
             startActivity<BmiMainActivity>()
         }
+
+        stopWatch.setOnClickListener {
+            startActivity<StopWatchActivity>()
+        }
     }
 
     override fun onBackPressed() {

@@ -8,4 +8,7 @@
     <string name="stopWatch">스탑워치</string>
     <string name="WebView">나만의 웹 브라우저</string>
     <string name="BMI">비만도 계산기</string>
+    <string name="count">0</string>
+    <string name="milli">00</string>
+    <string name="lapTime">랩 타임</string>
 </resources>
