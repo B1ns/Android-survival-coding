@@ -45,5 +45,5 @@ class BmiMainActivity : AppCompatActivity() {
             heightEditText.setText(height.toString())
             weightEditText.setText(weight.toString())
         }
-    }  
+    }
 }

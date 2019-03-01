@@ -9,7 +9,7 @@
                 android:id="@+id/action_naver"
                 android:title="@string/naver" />
             <item
-                 android:id="@+id/action_google"
+                android:id="@+id/action_google"
                 android:title="@string/google" />
             <item
                 android:id="@+id/action_daum"

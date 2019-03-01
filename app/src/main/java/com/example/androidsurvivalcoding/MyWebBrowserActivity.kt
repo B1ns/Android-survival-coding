@@ -50,7 +50,7 @@ class MyWebBrowserActivity : AppCompatActivity() {
         }
     }
 
-     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.webview, menu)
         return true
     }
@@ -98,7 +98,7 @@ class MyWebBrowserActivity : AppCompatActivity() {
     }
 
     override fun onContextItemSelected(item: MenuItem?): Boolean {
-        when(item?.itemId){
+        when (item?.itemId) {
             R.id.action_share -> {
                 share(webView.url)
                 return true
