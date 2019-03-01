@@ -24,4 +24,5 @@
     <string name="home">Home</string>
     <string name="share">페이지 공유</string>
     <string name="browser_text">기본 브라우저 열기</string>
+    <string name="tiltSensor">수평 측정기</string>
 </resources>

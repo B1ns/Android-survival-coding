@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         myWebBrowser.setOnClickListener {
             startActivity<MyWebBrowserActivity>()
         }
+
+        tiltSensor.setOnClickListener {
+            startActivity<TiltSensorActivity>()
+        }
     }
 
     override fun onBackPressed() {
