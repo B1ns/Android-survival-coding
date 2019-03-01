@@ -11,4 +11,17 @@
     <string name="count">0</string>
     <string name="milli">00</string>
     <string name="lapTime">랩 타임</string>
+    <string name="http">http://</string>
+    <string name="searchSite">검색 사이트</string>
+    <string name="search">검색 사이트</string>
+    <string name="naver">네이버</string>
+    <string name="google">구글</string>
+    <string name="daum">다음</string>
+    <string name="developer">개발자 정보</string>
+    <string name="call">연락처</string>
+    <string name="text">문자 보내기</string>
+    <string name="email">이메일 보내기</string>
+    <string name="home">Home</string>
+    <string name="share">페이지 공유</string>
+    <string name="browser_text">기본 브라우저 열기</string>
 </resources>

@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
         stopWatch.setOnClickListener {
             startActivity<StopWatchActivity>()
         }
+
+        myWebBrowser.setOnClickListener {
+            startActivity<MyWebBrowserActivity>()
+        }
     }
 
     override fun onBackPressed() {
