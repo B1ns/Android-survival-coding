@@ -1,8 +1,9 @@
-package com.example.androidsurvivalcoding
+package com.example.androidsurvivalcoding.StopWatch
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.androidsurvivalcoding.R
 import kotlinx.android.synthetic.main.activity_stop_watch.*
 import java.util.*
 import kotlin.concurrent.timer

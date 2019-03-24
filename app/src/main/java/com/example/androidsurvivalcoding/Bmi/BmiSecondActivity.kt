@@ -1,7 +1,8 @@
-package com.example.androidsurvivalcoding
+package com.example.androidsurvivalcoding.Bmi
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.androidsurvivalcoding.R
 import kotlinx.android.synthetic.main.activity_bmi_second.*
 import org.jetbrains.anko.toast
 

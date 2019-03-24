@@ -3,6 +3,10 @@ package com.example.androidsurvivalcoding
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
+import com.example.androidsurvivalcoding.Bmi.BmiMainActivity
+import com.example.androidsurvivalcoding.StopWatch.StopWatchActivity
+import com.example.androidsurvivalcoding.TiltSensor.TiltSensorActivity
+import com.example.androidsurvivalcoding.WebBrowser.MyWebBrowserActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast

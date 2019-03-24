@@ -1,4 +1,4 @@
-package com.example.androidsurvivalcoding
+package com.example.androidsurvivalcoding.TiltSensor
 
 import android.content.Context
 import android.content.pm.ActivityInfo
@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
+import com.example.androidsurvivalcoding.MainActivity
+import com.example.androidsurvivalcoding.R
 
 class TiltSensorActivity : AppCompatActivity(), SensorEventListener {
 

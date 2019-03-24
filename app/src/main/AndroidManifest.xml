@@ -15,20 +15,20 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MyGallery"></activity>
+        <activity android:name=".PhotoFrame.MyGallery"></activity>
         <activity
-            android:name=".TiltSensorActivity"
+            android:name=".TiltSensor.TiltSensorActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MyWebBrowserActivity"
+            android:name=".WebBrowser.MyWebBrowserActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".StopWatchActivity"
+            android:name=".StopWatch.StopWatchActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".BmiSecondActivity"
-            android:parentActivityName=".BmiMainActivity" />
-        <activity android:name=".BmiMainActivity" />
+            android:name=".Bmi.BmiSecondActivity"
+            android:parentActivityName=".Bmi.BmiMainActivity" />
+        <activity android:name=".Bmi.BmiMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.example.androidsurvivalcoding
+package com.example.androidsurvivalcoding.TiltSensor
 
 import android.content.Context
 import android.graphics.Canvas

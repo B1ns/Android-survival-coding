@@ -1,4 +1,4 @@
-package com.example.androidsurvivalcoding
+package com.example.androidsurvivalcoding.WebBrowser
 
 import android.content.Intent
 import android.net.Uri
@@ -10,6 +10,7 @@ import android.view.MenuItem
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.webkit.WebViewClient
+import com.example.androidsurvivalcoding.R
 import kotlinx.android.synthetic.main.activity_my_web_browser.*
 import org.jetbrains.anko.browse
 import org.jetbrains.anko.email

@@ -1,8 +1,9 @@
-package com.example.androidsurvivalcoding
+package com.example.androidsurvivalcoding.Bmi
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.preference.PreferenceManager
+import com.example.androidsurvivalcoding.R
 import kotlinx.android.synthetic.main.activity_bmi_main.*
 import org.jetbrains.anko.startActivity
 
