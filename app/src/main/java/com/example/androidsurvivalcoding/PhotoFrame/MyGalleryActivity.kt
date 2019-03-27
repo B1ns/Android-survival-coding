@@ -19,7 +19,7 @@ import org.jetbrains.anko.toast
 import org.jetbrains.anko.yesButton
 import kotlin.concurrent.timer
 
-class MyGallery : AppCompatActivity() {
+class MyGalleryActivity : AppCompatActivity() {
 
     private val REQUEST_READ_EXTERNAL_STORAGE = 1000
 
@@ -35,13 +35,13 @@ class MyGallery : AppCompatActivity() {
                 alert("사진 정보를 얻으려면 외부 저장소 권한이 필요함"){
                     yesButton {
                         //권한 요청
-                        ActivityCompat.requestPermissions(this@MyGallery, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),REQUEST_READ_EXTERNAL_STORAGE)
+                        ActivityCompat.requestPermissions(this@MyGalleryActivity, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),REQUEST_READ_EXTERNAL_STORAGE)
                 }
                     noButton { toast("권환 요청실패") }
                 }.show()
             }else{
                 //권한 요청
-                ActivityCompat.requestPermissions(this@MyGallery, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),REQUEST_READ_EXTERNAL_STORAGE)
+                ActivityCompat.requestPermissions(this@MyGalleryActivity, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),REQUEST_READ_EXTERNAL_STORAGE)
             }
         }else{
             //권환이 허용되있을경우
@@ -76,7 +76,7 @@ class MyGallery : AppCompatActivity() {
             while (cursor.moveToNext()){
                 //사진 경로 Uri 가져오기
                 val uri = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA))
-                Log.d("MyGallery", uri)
+                Log.d("MyGalleryActivity", uri)
                 fragments.add(PhotoFragment.newInstance(uri))
             }
         }
