@@ -15,7 +15,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PhotoFrame.MyGalleryActivity"></activity>
+        <activity
+            android:name=".PhotoFrame.MyGalleryActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TiltSensor.TiltSensorActivity"
             android:parentActivityName=".MainActivity" />

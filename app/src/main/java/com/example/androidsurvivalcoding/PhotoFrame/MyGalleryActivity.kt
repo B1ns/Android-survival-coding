@@ -66,21 +66,21 @@ class MyGalleryActivity : AppCompatActivity() {
         // 모든 사진 정보 가져오기
         val cursor = contentResolver.query(
             MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-            null, null, null, MediaStore.Images.ImageColumns.DATE_TAKEN + "DESC" // 찍은 날짜 내림차순
+            null, null, null, MediaStore.Images.ImageColumns.DATE_TAKEN + " DESC" // 찍은 날짜 내림차순
         )
 
         val fragments = ArrayList<Fragment>()
 
 
-        if (cursor != null){
-            while (cursor.moveToNext()){
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
                 //사진 경로 Uri 가져오기
                 val uri = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA))
                 Log.d("MyGalleryActivity", uri)
                 fragments.add(PhotoFragment.newInstance(uri))
             }
+            cursor.close()
         }
-        cursor.close()
         //어뎁터
         val adapter = MyPagerAdapter(supportFragmentManager)
         adapter.updateFragments(fragments)
