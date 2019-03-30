@@ -86,6 +86,7 @@ class MyGalleryActivity : AppCompatActivity() {
         adapter.updateFragments(fragments)
         viewPager.adapter = adapter
 
+
         //3초마다 슬라이드
         timer(period = 3000){
             runOnUiThread {

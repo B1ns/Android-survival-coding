@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import com.example.androidsurvivalcoding.Bmi.BmiMainActivity
+import com.example.androidsurvivalcoding.GpsMap.MapsActivity
 import com.example.androidsurvivalcoding.PhotoFrame.MyGalleryActivity
 import com.example.androidsurvivalcoding.StopWatch.StopWatchActivity
 import com.example.androidsurvivalcoding.TiltSensor.TiltSensorActivity
@@ -40,6 +41,9 @@ class MainActivity : AppCompatActivity() {
         }
         myGallery.setOnClickListener {
             startActivity<MyGalleryActivity>()
+        }
+        gpsMap.setOnClickListener {
+            startActivity<MapsActivity>()
         }
     }
 
