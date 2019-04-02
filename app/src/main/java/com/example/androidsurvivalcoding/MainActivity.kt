@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         myGallery.setOnClickListener {
             startActivity<MyGalleryActivity>()
         }
+
         gpsMap.setOnClickListener {
             startActivity<MapsActivity>()
         }
