@@ -49,6 +49,7 @@ class StopWatchActivity : AppCompatActivity() {
                 secTextView.text = "$sec"
                 milliTextView.text = "$milli"
             }
+
         }
     }
 

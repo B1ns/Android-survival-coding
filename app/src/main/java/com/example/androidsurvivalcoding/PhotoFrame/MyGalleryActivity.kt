@@ -99,6 +99,5 @@ class MyGalleryActivity : AppCompatActivity() {
         }
     }
 
-    
 
 }
