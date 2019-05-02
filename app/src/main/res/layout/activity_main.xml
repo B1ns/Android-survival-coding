@@ -107,6 +107,7 @@
             android:text="뮤직 플레이어" />
 
         <Button
+            android:id="@+id/toDo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="3dp"

@@ -8,6 +8,7 @@ import com.example.androidsurvivalcoding.GpsMap.MapsActivity
 import com.example.androidsurvivalcoding.PhotoFrame.MyGalleryActivity
 import com.example.androidsurvivalcoding.StopWatch.StopWatchActivity
 import com.example.androidsurvivalcoding.TiltSensor.TiltSensorActivity
+import com.example.androidsurvivalcoding.Todo.TodoActivity
 import com.example.androidsurvivalcoding.WebBrowser.MyWebBrowserActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
@@ -45,6 +46,9 @@ class MainActivity : AppCompatActivity() {
 
         gpsMap.setOnClickListener {
             startActivity<MapsActivity>()
+        }
+        toDo.setOnClickListener {
+            startActivity<TodoActivity>()
         }
     }
 
