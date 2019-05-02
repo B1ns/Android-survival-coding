@@ -27,9 +27,9 @@ class EditActivity : AppCompatActivity() {
         //업데이트 조건
         val id = intent.getLongExtra("id", -1L)
         if (id == -1L) {
-            insertTodo()
+            insertMode()
         } else {
-            updateTodo(id)
+            updateMode(id)
         }
 
 
