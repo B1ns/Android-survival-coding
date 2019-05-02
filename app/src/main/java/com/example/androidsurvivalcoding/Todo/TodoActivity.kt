@@ -9,6 +9,7 @@ import io.realm.Sort
 import io.realm.kotlin.where
 
 import kotlinx.android.synthetic.main.activity_todo.*
+import kotlinx.android.synthetic.main.content_todo.*
 import org.jetbrains.anko.startActivity
 
 class TodoActivity : AppCompatActivity() {
@@ -28,6 +29,19 @@ class TodoActivity : AppCompatActivity() {
         val realmResult = realm.where<Todo>()
             .findAll()
             .sort("date", Sort.DESCENDING)
+        val adapter = TodoListAdapter(realmResult)
+        listView.adapter = adapter
+
+        realmResult.addChangeListener { _ -> adapter.notifyDataSetChanged() }
+
+        listView.setOnItemClickListener { parent, view, position, id ->
+            startActivity<EditActivity>("id" to id)
+        }
+
+        fab.setOnClickListener {
+            startActivity<EditActivity>()
+        }
+
     }
 
     override fun onDestroy() {
