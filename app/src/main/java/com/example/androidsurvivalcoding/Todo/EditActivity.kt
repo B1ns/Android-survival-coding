@@ -21,6 +21,20 @@ class EditActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit)
 
+        val id = intent.getLongExtra("id", -1L)
+        if (id == -1L) {
+            insertTodo()
+        } else {
+            updateTodo(id)
+        }
+
+        calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
+            calendar.set(Calendar.YEAR, year)
+            calendar.set(Calendar.MONTH, month)
+            calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+
+        }
+
     }
 
     override fun onDestroy() {
@@ -51,5 +65,34 @@ class EditActivity : AppCompatActivity() {
             return maxId.toInt() + 1
         }
         return 0
+    }
+
+    private fun updateTodo(id: Long) {
+        realm.beginTransaction() // 트랜젝션 시작
+
+        val updateItem = realm.where<Todo>().equalTo("id", id).findFirst()!!
+        //값 수정
+        updateItem.title = todoEditText.text.toString()
+        updateItem.date = calendar.timeInMillis
+
+        realm.commitTransaction() // 트랜잭션 종료 반영
+
+        // 다이얼로그 표시
+        alert("내용이 변경되었습니다.") {
+            yesButton { finish() }
+        }.show()
+    }
+
+    private fun deleteTodo(id: Long) {
+        realm.beginTransaction()
+
+        val deleteItem = realm.where<Todo>().equalTo("id", id).findFirst()
+        // 삭제할 객체
+        deleteItem?.deleteFromRealm()
+        realm.commitTransaction()
+
+        alert("내용이 삭제되었습니다.") {
+            yesButton { finish() }
+        }.show()
     }
 }
