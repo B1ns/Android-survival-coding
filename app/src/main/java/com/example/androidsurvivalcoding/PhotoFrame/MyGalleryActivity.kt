@@ -38,7 +38,7 @@ class MyGalleryActivity : AppCompatActivity() {
                         ActivityCompat.requestPermissions(this@MyGalleryActivity, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),REQUEST_READ_EXTERNAL_STORAGE)
                 }
                     noButton { toast("권환 요청실패") }
-                }.show()
+                  }.show()
             }else{
                 //권한 요청
                 ActivityCompat.requestPermissions(this@MyGalleryActivity, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),REQUEST_READ_EXTERNAL_STORAGE)
